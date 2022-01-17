@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ares Room Detail</title>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- =============== Font Awesome Icons Link ==================== -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Cormorant -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Open Sans Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Celender Css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css" />
+    <!-- Ares Css Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="date-picker">  
+    <div class="main" id="wrapper">
+        <div class="wrapper-inner">
+            <!-- Header Section -->
+            <header class="main-header room-header">
+                <div class="nav-main">
+                    <div class="pre-nav-main">
+                        <div class="custom-container">
+                            <div class="pre-nav">
+                                <div class="nav-contact-info">
+                                    <ul>
+                                        <li><span>+49 (0) 30 202 36 55 70</span></li>
+                                        <li><span>Kronberger Str. 12, 14193 Berlin</span></li>
+                                    </ul>
+                                </div>
+                                <div class="pre-nav-right">
+                                    <div class="language-menu">
+                                        <ul>
+                                            <li><a href="#">En</a></li>
+                                            <li><a href="#">Fr</a></li>
+                                            <li><a href="#">It</a></li>
+                                            <li><a href="#">De</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="pn-right-button">
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            <span>Anmelden</span>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-calendar"></i>
+                                            <span>Suchen</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-container header-container">
+                        <nav class="navbar navbar-expand-lg p-0 ares-navbar sticky-top">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/logo-black.png" class="black" alt="Brand Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fas fa-bars"></i>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="pn-right-button pn-right-btn-mob">
+                                    <a href="#">
+                                        <i class="fa fa-user"></i>
+                                        <span>Anmelden</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>Suchen</span>
+                                    </a>
+                                </div>
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="active">Startseite</span></a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Zimmer & Suiten
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li class="second-level-dropdown">
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Unsere Zimmer</span>
+                                                </a>
+                                                <!-- <div class="second-level-menu">
+                                                    <a class="dropdown-item" href="#"><span>Action</span></a>
+                                                    <a class="dropdown-item" href="#"><span>Another action</span></a>
+                                                </div> -->
+                                            </li>
+                                            <li class="second-level-dropdown">
+                                                <a class="dropdown-item" href="#"><span>Unsere Suiten</span></a>
+                                                <!-- <div class="second-level-menu">
+                                                    <a class="dropdown-item" href="#"><span>Action</span></a>
+                                                    <a class="dropdown-item" href="#"><span>Another action</span></a>
+                                                </div> -->
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Restaurant
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li class="second-level-dropdown">
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Unsere Menüs</span>
+                                                </a>
+                                            </li>
+                                            <li class="second-level-dropdown">
+                                                <a class="dropdown-item" href="#"><span>Speisekarte</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"">
+                                        <a href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galerie</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li class="second-level-dropdown">
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Unsere Menüs</span>
+                                                </a>
+                                            </li>
+                                            <li class="second-level-dropdown">
+                                                <a class="dropdown-item" href="#"><span>Speisekarte</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">Über uns</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">Kontakt</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- Unsere Zimmer Section -->
+            <section class="unsere-zimmer room-us-zimmer">
+                <div class="unsere-top-text">
+                    <h3>Einzelzimmer</h3>
+                </div>
+            </section>
+            <!-- Room Detail Main Section -->
+            <section class="room-detail-main">
+                <div class="room-detail-inner">
+                    <div class="custom-container room-detail-container">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-12">
+                                <!-- Slider -->
+                                <div class="room-ft-slider">
+                                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                                        <div class="carousel-inner room-detail-carousel-inner">
+                                          <div class="carousel-item active">
+                                                <div class="slider-background-1">
+                                                    <div class="slider-overly"></div>
+                                                </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <div class="slider-background-2">
+                                                <div class="slider-overly"></div>
+                                            </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <div class="slider-background-3">
+                                                <div class="slider-overly"></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                            <i class="fas fa-angle-left"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- ZimmerBes -->
+                                <div class="zimmerbes">
+                                    <div class="immerbes-inner">
+                                        <h4>Zimmerbeschreibung</h4>
+                                        <p>
+                                            Nullam erat felis, pellentesque non egestas nec, vulputate id odio. Donec mattis nec orci ut porta. Donec pharetra convallis augue in tincidunt. Nullam eget felis urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent tincidunt massa porta odio euismod, sit amet cursus quam sagittis. Mauris eget volutpat urna, sit amet ultricies est.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Tabs Row -->
+                                <div class="vedio-tabs-main">
+                                    <div class="vedio-tabs">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item tab-item" role="presentation">
+                                              <a class="nav-link tab-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">Übersicht</a>
+                                            </li>
+                                            <li class="nav-item tab-item" role="presentation">
+                                              <a class="nav-link tab-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Etagenplan</a>
+                                            </li>
+                                            <li class="nav-item tab-item" role="presentation">
+                                              <a class="nav-link tab-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false">Zimmerpreise</a>
+                                            </li>
+                                        </ul>
+                                          <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                                                <div class="row">
+                                                    <div class="pnel-row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons">
+                                                                <span><i class="fas fa-wifi pl-icon"></i>Hi speed W-LAN</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons">
+                                                                <span><i class="fas fa-plane pl-icon"></i>Flughafentransfer</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons pnel-last">
+                                                                <span><i class="fas fa-phone-alt pl-icon"></i>24 Stunden Empfang</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pnel-row pnel-row-2">
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons">
+                                                                <span><i class="fas fa-wifi pl-icon"></i>Hi speed W-LAN</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons">
+                                                                <span><i class="fas fa-plane pl-icon"></i>Flughafentransfer</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons pnel-last">
+                                                                <span><i class="fas fa-phone-alt pl-icon"></i>24 Stunden Empfang</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pnel-row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons">
+                                                                <span><i class="fas fa-wifi pl-icon"></i>Hi speed W-LAN</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons">
+                                                                <span><i class="fas fa-plane pl-icon"></i>Flughafentransfer</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons pnel-last">
+                                                                <span><i class="fas fa-phone-alt pl-icon"></i>24 Stunden Empfang</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pnel-row pnel-row-2 pnel-row-3">
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons">
+                                                                <span><i class="fas fa-wifi pl-icon"></i>Hi speed W-LAN</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons">
+                                                                <span><i class="fas fa-plane pl-icon"></i>Flughafentransfer</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                                            <div class="panel-icons pnel-last">
+                                                                <span><i class="fas fa-phone-alt pl-icon"></i>24 Stunden Empfang</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                                                <p>
+                                                    Nunc congue praesent ac fringilla neque aliquam euismod sem est pellentes lorem dignissim in. Duis in convallis nulla. Ut ut placerat velit, ultricies pharetra ante. Fusce aliquam velit sed magna consectetur, at scelerisque elit lobortis. Sed lacus est, dictum eget auctor sit lorem ips dolor amet consec adipisci pellentesque mollis hend accumsan in euismod tortor posuere nisi donec malesuada feugiat dapibus.
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                                                <p>
+                                                    Duis in convallis nulla. Ut ut placerat velit, ultricies pharetra ante. Lorem ips dolor amet consec adipisci pellentesque mollis hend accumsan in euismod tortor posuere nisi donec malesuada feugiat dapibus. Nunc congue praesent ac fringilla neque aliquam euismod sem est pellentes lorem dignissim in. Fusce aliquam velit sed magna consectetur, at scelerisque elit lobortis. Sed lacus est, dictum eget auctor sit
+                                                </p>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <!-- Gallery -->
+                                <div class="room-detail-gallery">
+                                    <div class="room-detail-gallery-inner">
+                                        <h4>Foto Galerie</h4>
+                                        <div class="row">
+                                            <!-- Box 1 -->
+                                            <div class="col-4 p-0">
+                                                <div class="room-detail-box">
+                                                    <img src="assets/images/room-detail-1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Box 2 -->
+                                            <div class="col-4 p-0">
+                                                <div class="room-detail-box">
+                                                    <img src="assets/images/Slider.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Box 3 -->
+                                            <div class="col-4 p-0">
+                                                <div class="room-detail-box">
+                                                    <img src="assets/images/room-detail-1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Box 4 -->
+                                            <div class="col-4 p-0">
+                                                <div class="room-detail-box">
+                                                    <img src="assets/images/slider-1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Box 5 -->
+                                            <div class="col-4 p-0">
+                                                <div class="room-detail-box">
+                                                    <img src="assets/images/Slider.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Box 6 -->
+                                            <div class="col-4 p-0">
+                                                <div class="room-detail-box">
+                                                    <img src="assets/images/slider-1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Room Detail Haufig Tabs -->
+                                <div class="room-detail-haufig">
+                                    <div class="room-det-haufig-inner">
+                                        <div class="haufig-text">
+                                            <h4>Häufig gestellte Fragen</h4>
+                                        </div>
+                                        <div class="tabs-ilzes">
+                                            <div class="tab">
+                                                <div class="title">
+                                                    <div class="title-icons">
+                                                        <i class="fas fa-minus title-icon-minus"></i>
+                                                        <i class="fas fa-plus title-icon-plus"></i>
+                                                    </div>
+                                                  <div class="title-text"><h4>Ab wann ist der Check-In möglich?</h4></div>
+                                                </div>
+                                                <div class="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et rhoncus neque. Maecenas enim nunc, dapibus in mattis eleifend, luctus et magna. Maecenas nunc est, posuere sed convallis tincidunt</p></div>
+                                              </div>
+                                              <div class="tab">
+                                                <div class="title">
+                                                    <div class="title-icons">
+                                                        <i class="fas fa-minus title-icon-minus"></i>
+                                                        <i class="fas fa-plus title-icon-plus"></i>
+                                                    </div>
+                                                  <div class="title-text"><h4>Ist Frühstück im Zimmerpreis enthalten?</h4></div>
+                                                </div>
+                                                <div class="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et rhoncus neque. Maecenas enim nunc, dapibus in mattis eleifend, luctus et magna. Maecenas nunc est, posuere sed convallis tincidunt</p></div>
+                                              </div>
+                                                <div class="tab">
+                                                    <div class="title">
+                                                        <div class="title-icons">
+                                                            <i class="fas fa-minus title-icon-minus"></i>
+                                                            <i class="fas fa-plus title-icon-plus"></i>
+                                                        </div>
+                                                      <div class="title-text"><h4>Bieten Sie Kinderbetreuung an?</h4></div>
+                                                    </div>
+                                                <div class="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et rhoncus neque. Maecenas enim nunc, dapibus in mattis eleifend, luctus et magna. Maecenas nunc est, posuere sed convallis tincidunt</p></div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Forms Section -->
+                            <div class="col-lg-4 col-md-12">
+                                <div class="rm-detail-form-box">
+                                     <div class="rm-detl-form-inner">
+                                         <div class="rm-detil-pricing">
+                                             <p>Zimmer Ab</p>
+                                             <h3>100€</h3>
+                                             <p>pro Nacht</p>
+                                          </div>
+                                          <form action="#" class="rm-detail-form-group">
+                                            <div class="form-item">
+                                               <label>Anreise Ab</label>
+                                               <input type="text" class="picker-celender" name="daterange" placeholder="Anreise Ab">
+                                            </div>
+                                            <div class="form-item">
+                                               <label>Anreise</label>
+                                               <input type="text" name="daterange" placeholder="Anreise">
+                                            </div>
+                                            <div class="small-form-row">
+                                                <div class="form-item small-item">
+                                                    <label>Erwachsene</label>
+                                                    <select id="option-input">
+                                                        <option value = "0">0</option>
+                                                        <option value = "1">1</option>
+                                                        <option value = "2">2</option>
+                                                        <option value = "3">3</option>
+                                                        <option value = "4">4</option>
+                                                    </select>
+                                                 </div>
+                                                 <div class="form-item small-item">
+                                                    <label>Kind</label>
+                                                    <select id="option-input">
+                                                        <option value = "0">0</option>
+                                                        <option value = "1">1</option>
+                                                        <option value = "2">2</option>
+                                                        <option value = "3">3</option>
+                                                        <option value = "4">4</option>
+                                                    </select>
+                                                 </div>
+                                            </div>
+                                            <button type="submit">Verfügbarkeit prüfen</button>
+                                        </form>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-inner">
+                    <div class="custom-container footer-container">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="footer-block">
+                                    <div class="ft-bk-hotel">
+                                        <h5>B2K Hotel</h5>
+                                        <p>Curabitur eu velit et lorem hendrerit consequat at pharetra venenatis urna vel volutpat aenean justo ut pellentesque metus id nulla.</p>
+                                        <div class="ft-social-icons">
+                                            <div class="ft-social-item">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="ft-social-item">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </div>
+                                            <div class="ft-social-item">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </div>
+                                            <div class="ft-social-item">
+                                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                            </div>
+                                            <div class="ft-social-item">
+                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                            </div>
+                                            <div class="ft-social-item">
+                                                <a href="#"><i class="fab fa-tumblr"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="footer-block">
+                                    <div class="kontakt">
+                                        <h5>Kontakt</h5>
+                                        <ul>
+                                            <li>Kronberger Str. 12, 14193 Berlin</li>
+                                            <li>+49 (0) 30 202 36 55 70</li>
+                                            <li>info@b2k-media.de</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="footer-block">
+                                    <div class="newsletter">
+                                        <h5>Newsletter</h5>
+                                        <p>Mauris commodo risus sollicitudin lectus pulvinar dictum vestibulum feugiat metus sapien.</p>
+                                        <div class="ft-form-group">
+                                            <form action="#">
+                                                <div class="ft-form-item">
+                                                    <input type="text" name="nlang" value="">
+                                                </div>
+                                                <div class="ft-form-item">
+                                                    <input class="submit" type="submit" value="Anmelden">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copy-right-block">
+                        <div class="custom-container">
+                            <div class="ft-copy-text">
+                                <p>© 2019 B2K Hotel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="est-frontend-display-wrap">	
+        <div class="est-external est-tab-type">
+            <a href="#" target="_blank" class="est-external-link est-tab-link">
+                Jetzt ab 49€ buchen			</a>
+        </div>			
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Celender Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="assets/js/highlight.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <!-- current theme script -->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
